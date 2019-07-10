@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>e-Emargement - enregistrement</title>
+		<style>
+			body{
+				padding: 0; 
+				margin: 0; 
+				box-sizing: border-box; 
+				background-color: rgb(219, 232, 250); 
+				font-size: 25px
+			}
+
+			#div_form{
+				margin: 0 auto; 
+				width: 40%; 
+				padding: 0px;  
+				background-color: rgb(122, 174, 241); 
+				margin-top: 100px; 
+				border-radius: 10px;
+			}
+
+			h2{
+				color: white;  
+				margin: 0 auto; 
+				width: 70%;
+			}
+
+			#btn_save{
+				font-size: 18px; 
+				margin: 10px; 
+				padding: 10px; 
+				position: relative; 
+				left: 34.5%; 
+				width: 30%; 
+				border-radius: 5px;
+			}
+
+			@media screen and (max-width: 640px){
+				#div_form{
+					width: 100%; 
+				}
+
+				h2{
+					width: 50%;
+				}
+
+				body{
+					background-color: rgb(122, 174, 241);
+					font-size: 12px;
+				}
+
+				#btn_save{
+					font-size: 15px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div_form">
+			
+		<form action="" method="post" style="margin: 0 auto;">
+				<h2 style="">ENREGISTREMENT</h2>	
+			<div style="margin: 10px;color: white; padding: 20px; position: relative; left: 10px">
+				Nom d'utilisateur <b style="color: red">*</b> : <i style="color: red; font-size: smaller">{{msguser}}</i><br>
+				<input type="text" name="user" placeholder="Login" style="width: 95%; height: 30px; border-radius: 5px; padding: 5px"/>
+			</div>
+			<div style="margin: 10px;color: white; padding: 20px; position: relative; left: 10px">
+				Mot de passe <b style="color: red">*</b> : <i style="color: red; font-size: smaller">{{msgpass}}</i><br>
+				<input type="password" name="passw" placeholder="Mot de passe" style="width: 95%; height: 30px; border-radius: 5px; padding: 5px"/>
+			</div>
+			<div style="margin: 10px; color: white; padding: 20px; position: relative; left: 10px">
+				Confirmer <b style="color: red">*</b> : <i style="color: red; font-size: smaller">{{msgconf}}</i><br>
+				<input type="password" name="confirmation" placeholder="Mot de passe" style="width: 95%; height: 30px; border-radius: 5px; padding: 5px"/>
+			</div>
+			<input type="submit" value="Enregistrer" id="btn_save"/>
+
+		</form>
+		</div>	
+	</body>
+
+</html>

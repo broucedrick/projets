@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="{{url_for ('static', filename='form_css.css' )}}">
+		<title>Emargement {{cour}}</title>
+		<style>
+			h1{
+				position: absolute; 
+				top: 10px; 
+				bottom: 15px; 
+				left: 40.5%;
+			}
+
+			#div_form{
+				border-radius: 10px; 
+				margin: 0 auto; 
+				width: 35%; 
+				margin-top: 30px
+			}
+
+			#btn_save{
+				font-size: 20px; 
+				margin: 20px; 
+				padding: 10px; 
+				position: relative; 
+				left: 30%; 
+				width: 40%;
+			}
+
+			@media (max-width: 679px){
+				h1{
+					width: 50%;
+					font-size: 25px;
+					left: 30px;
+				}
+
+				#div_form{
+					border-radius: 10px; 
+					margin: 0 auto; 
+					width: 90%; 
+					margin-top: 30px
+				}
+
+				#btn_save{
+					font-size: 15px;
+				}
+			}
+		</style>
+	</head>
+	<body style="margin: 0 auto;">
+		<div id="div1">
+			<h1>Nouvelle émargement</h1> 
+			<a href="/deconnexion" id="dcnx">Se déconnecter</a>
+		</div>
+		<div id="div_form">
+			<form action="" method="post" style="margin: 10px; font-size: 25px; ">
+				<div>
+					Date : <input type="date" name="dates" style="padding: 8px; font-size: 20px"/>
+				</div>
+				<div>
+					</br>Leçons du jour:</br>
+					<TEXTAREA name="lecons" rows=4 cols=40 style="width: 100%; height: 100px; border-radius: 10px; padding: 8px; font-size: 20px"></TEXTAREA>
+				</div>
+				<div>
+					</br>Absents:</br>
+					<TEXTAREA name="absents" rows=4 cols=40 style="width: 100%; height: 100px; border-radius: 10px; padding: 8px; font-size: 20px"></TEXTAREA>
+				</div>
+				</br><input type="submit" value="Enregistrer" id="btn_save"/>				
+			</form>	
+		</div>
+	</body>
+</html>

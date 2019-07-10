@@ -1,0 +1,27 @@
+#div1{
+    background-color: rgb(122, 174, 241); 
+    color: white; 
+    border-radius: 0px; 
+    height: 95px; 
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+
+#dcnx{
+    color: white; 
+    text-decoration: none;
+    display: inline;
+    /* border: 2px solid white;  */
+    padding: 8px;
+    background-color: red; 
+    border-radius: 5px;
+    position: absolute; 
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+}
+
